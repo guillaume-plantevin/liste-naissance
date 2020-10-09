@@ -1,26 +1,590 @@
-<!-- 
-    Un jeune couple va bientôt avoir un enfant. 
-    Ils ont beaucoup de famille et d’amis. Afin d’éviter d’avoir 6 poussettes, 14 landos et 42 bavoirs, 
-    ils ont décidé de mettre en place, sur une jolie page web, 
-    une liste de naissance avec l’ensemble de leurs besoins. 
-    Cette liste est exhaustive, c’est un tableau qui possède pour chaque élément le nom de l’objet, 
-    une image miniature, une catégorie, 
-    une description et un lien vers un site qui vend l’article question.
-    Dans cette liste il faut créer 4 classes CSS afin de repérer facilement : 
-    les objets ayant déjà été achetés, ayant été sélectionnés par des amis, urgents et normaux.
-    En bas de la liste il doit y avoir un lien qui mène vers un formulaire 
-    simulant l’ajout d’objets à la liste. 
-    Ce formulaire doit contenir l’ensemble des informations présentes dans la liste.
-    Les deux pages doivent utiliser le même css.
--->
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste pour le nouveau bébé</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <link rel="stylesheet" href="liste.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="liste.css">
+        <title>Liste de naissance</title>
+        <!-- 
+            Cette liste est exhaustive, c’est un tableau qui possède pour chaque élément le nom de l’objet, 
+            une image miniature, une catégorie, 
+            une description et un lien vers un site qui vend l’article question.
+            Dans cette liste il faut créer 4 classes CSS afin de repérer facilement : 
+            les objets ayant déjà été achetés, ayant été sélectionnés par des amis, urgents et normaux.
+            En bas de la liste il doit y avoir un lien qui mène vers un formulaire 
+            simulant l’ajout d’objets à la liste. 
+            Ce formulaire doit contenir l’ensemble des informations présentes dans la liste.
+            Les deux pages doivent utiliser le même css.
+        
+            RAJOUTER UN BOUTON DE RENVOI VERS LE HAUT DE LA PAGE
+        -->
+    </head>
+    <body>
+        <header>
+            <h1 id="up">Liste de naissance</h1>
+
+        </header>
+        <nav>
+
+        </nav>
+        <aside>
+            4 Catégories:
+        </aside>
+
+        <table style="width:auto;background: palegreen;">
+            <tr>
+                <th class="categories">Catégorie</th>
+                <th class="photo">Photo</th>
+                <th class="nom">Nom</th>
+                <th class="description">Description</th>
+                <th class="link">Lien pour achat</th>
+            </tr>
+            <!-- ALIMENTATION -->
+            <tr>
+                <th class="categories">Alimentation</th>
+
+                <td><img class="photo" src="images/01-allaitement.png" alt="kit d'allaitement" /></td>
+                <td class="nom">kit d'allaitement</td>
+                <td class="description">
+                    <p>Collectez votre lait maternel, stockez-le et alimentez votre bébé en toute simplicité.</p>
+                    
+                    <ul>Pack complet:
+                        <li>20 sachets de conservation recyclables,</li> 
+                        <li> 7 adaptateurs tire-lait,</li>
+                        <li> 2 biberons ergonomiques,</li>
+                        <li> 3 tétines (forme du sein maternel) & 2 goupillons et 1 coffret de stockage.</li>
+                    </ul>
+                </td>
+                <td class="link"><a href="https://www.babymoov.com/fr/starter-kit-twist-a004607.html">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/02-bavoir.png" alt="bavoir"></td>
+                <td class="nom">Bavoir</td>
+                <td class="description">
+                    <ul>Le bavoir rigolo et pratique!
+                        <li>Matière soft et douce</li>
+                        <li>Scratch soft pour attacher le bavoir tout en douceur</li>
+                        <li>Design fun et rigolo</li>
+                        <li>Nettoyage facile</li>                
+                    </ul>
+                </td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-bavoir-soft-bdb.html">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/03-biberon.png" alt="biberon"></td>
+                <td class="nom">Biberon</td>
+                <td class="description">
+                    <ul>
+                        <li>Col large (5cm)</li>
+                        <li>Capuchon ergonomique</li>
+                        <li>cintrée</li>
+                        <li>Coloris Rose</li>
+                    </ul>
+                </td>
+                <td class="link"><a href="https://www.babymoov.com/fr/biberon.html">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/04-boite-doseuse.jpg" alt="Boite doseuse biberon"></td>
+                <td class="nom">Boite doseuse biberon</td>
+                <td class="description">
+                    <ul>
+                        <li>3 compartiments empilables: format compact idéal pour les déplacements</li>
+                        <li>Usage évolutif: peut être utilisé comme boîte à snack</li>
+                        <li>Facile à utiliser grâce aux becs verseurs</li>
+                        <li>Lavage à la main ou lave-vaisselle ou stérilisateur</li>
+                    </ul>
+                </td>
+                <td class="link"><a href="https://fr.shop-orchestra.com/fr/marques-a-decouvrir/premaman/boite-doseuse-de-lait-en-poudre-mix%26%2339n%26%2339match---bleu-PREYYI.html?dwvar_PREYYI_orc_color=NoColor&dwvar_PREYYI_orc_size=WEB-0000297#q=Boite+doseuse+biberon&start=2">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/05-coussin.png" alt="Coussin de maternité"></td>
+                <td class="nom">Coussin de maternité</td>
+                <td class="description">
+                    <ul>
+                        <li>Confortable avec son remplissage microbilles et sa forme morphologique</li>
+                        <li>Soulage le dos, le ventre et les jambes durant la grossesse</li>
+                        <li>Maintien le bébé à la bonne hauteur pendant l'allaitement ou le biberon</li>
+                        <li>Soulage le dos et les bras du parent pendant l'allaitement ou le biberon</li>
+                        <li>Maintien le bébé lorsqu'il ne tient pas encore seul en position assise</li>
+                    </ul>
+                </td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-coussin-maternite-b050502.html">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/06-goupillon.png" alt="Goupillon pour biberon"></td>
+                <td class="nom">Goupillon pour biberon</td>
+                <td class="description">
+                    <p>L'incontournable pour nettoyer les biberons de votre bébé!</p>
+                    <ul>
+                        <li>Brosse large adaptée à toutes les tailles de biberons</li>
+                        <li>Brosse spéciale tétine très résistante fournie</li>
+                        <li>Ventouse intégrée pour un séchage rapide & hygiènique</li>
+                        <li>Brosse Spéciale pour Tétine</li>
+                    </ul>
+                </td>
+                <td class="link"><a href="https://www.babymoov.com/fr/babymoov-goupillon-biberon-a006007.html">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/07-seche-biberon.png" alt="Sèche biberon"></td>
+                <td class="nom">Sèche biberon</td>
+                <td class="description">
+                    <ul>
+                        <li>Grande capacité: jusqu'à 6 biberons standards ou cols larges</li>
+                        <li>Hygiénique: récupérateur d'eau amovible</li>
+                        <li>Pratique: passe au lave-vaisselle</li>    
+                    </ul>
+                </td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-seche-biberon-b006911.html">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/08-sucette.png" alt="sucette"></td>
+                <td class="nom">Sucette</td>
+                <td class="description">
+                    <p>S'adapte parfaitement au palais de bébé!</p>
+                    <ul>
+                        <li>Forme physiologique pour s'adapter à la forme du palais et à la dentition de bébé</li>
+                        <li>Collerette ergonomique avec aérations et surface très douce pour le confort de bébé</li>
+                        <li>3 tailles pour s'adapter à la croissance de bébé</li>
+                    </ul>
+                </td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-sucettes-bebe-0-6-mois-bdb.html">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/09-tétine.png" alt="tétine"></td>
+                <td class="nom">Tétine</td>
+                <td class="description">
+                    <p>Fini les transferts, vous ne perdrez plus une précieuse goutte de lait maternel grâce à Twist™!</p>
+                    <ul>
+                        <li>2 tétines débit rapide avec protège-tétine</li>
+                        <li>Favorise la succion active</li>
+                        <li>Forme morphologique qui évite les entrées d'air</li>
+                        <li>Passe au lave-vaisselle et au stérilisateur vapeur</li>
+                        <li>S'utilise avec le biberon Squeeze™ dès la naissance</li>
+                    </ul>
+                </td>
+                <td class="link"><a href="https://www.babymoov.com/fr/tetines-active-latchtm-debit-rapide-a004612.html">Lien</a></td>
+            </tr>
+
+            <!-- VETEMENTS -->
+            <tr>
+                <th class="categories">Vétements</th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Bodies bébé</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Bonnet bébé</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">chapeau</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Paires de chaussettes bébé</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Paire de chausson bébé</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Ensemble jour</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Paire de lunettes de soleil bébé</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Paire de moufles bébé</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Pyjama bébé</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Vestes</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+                
+            <!-- TOILETTE -->
+            <tr>
+                <th class="categories">toilette</th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Baignoire bébé</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Brosse à cheveux</td>
+                <td class="description">
+
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Paire de ciseaux bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Couches taille 1</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Coussinets d'allaitement</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Kit de toilette</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Matelas à langer</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Mouche à bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Table à langer</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Thermomètre à bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Thermomètre de bain</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Transat de bain</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+
+            <!-- SOMMEIL -->
+            <tr>
+                <th class="categories">Sommeil</th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Lit pour bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Commode pour bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Armoire pour bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Drap housse pour bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Gigoteuse</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Housse alèse</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Lit parapluie</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Matelas bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Mobile de lit</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Veilleuse bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+
+            <!-- EVEIL ET JOUET -->
+            <tr>
+                <th class="categories">Éveil et jouet</th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">doudou</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Jouet</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Peluche</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Tapis d'éveil</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Transat bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+
+            <!-- POUSSETTE -->
+            <tr>
+                <th class="categories">Poussette</th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Chancelière poussette</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Housse de pluie poussette</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Ombrelle poussette</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Sac à langer</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+
+            <!-- SECURITE -->
+            <tr>
+                <th class="categories">Sécurité</th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Babyphone</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><img class="photo" src="images/" alt=""></td>
+                <td class="nom">Parc bébé</td>
+                <td class="description">
+                    
+                </td>
+                <td class="link"><a href="">Lien</a></td>
+            </tr>
+                
+        </table>
+
+        <footer>
+            <a href="formulaire.html">Formulaire</a>
+            <!-- BOUTON DE RENVOI -->
+            <span>
+                <a href="#up"><img src="images/arrow-up.png" alt="flêche vers le haut" width="80px"/>Retour vers le haut</a>
+            </span>
+            
+
+        </footer>
+        
+    </body>
 </html>

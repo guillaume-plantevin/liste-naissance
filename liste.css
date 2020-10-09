@@ -1,0 +1,56 @@
+/* 
+    les objets ayant déjà été achetés, 
+    ayant été sélectionnés par des amis, urgents et normaux.
+    En bas de la liste il doit y avoir un lien qui mène vers un formulaire 
+    simulant l’ajout d’objets à la liste.  
+*/
+
+body {
+    margin: 0;
+}
+header {
+    margin: 10px 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.go-up {
+
+}
+/* 
+.categories {
+    margin: 0 10px;
+} */
+.photo {
+    width: 180px;
+}
+p {
+    margin-left: 2%;
+}
+th {
+    margin: 0 10px;
+}
+table, th, td {
+    border: 2px solid black;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 15px;
+}
+.link, .nom {
+    text-align: center;
+}
+/*          CATEGORIES              */
+.bought {
+
+}
+.selected {
+
+}
+.urgent {
+
+}
+.normal {
+
+}
+/*          END OF CATEGORIES        */
