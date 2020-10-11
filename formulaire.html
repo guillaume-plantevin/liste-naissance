@@ -8,19 +8,98 @@
         <!-- 
             Ce formulaire doit contenir l’ensemble des informations présentes dans la liste.
             Les deux pages doivent utiliser le même css.
+
+
+
+            RAJOUTER UN BOUTON "CONSERVER LES IDENTIFIANTS POUR LES ACHATS MULTIPLES"
             -->
     </head>
     <body>
         <nav>
+            <!-- ¿ indispensable ? -->
 
         </nav>
         <header>
             <h1>Formulaire</h1>
-
         </header>
-        <main>
-            <form action="#" >
 
+        <main>
+            <section>
+                <p>
+                    Pour que nous puissions tenir à jour les articles disponibles dans la liste, merci de renseigner les informations suivantes et de valider. Nous vous enverrons une confirmation dans votre boîte mail.
+                </p>
+                <p>
+                    NOTE:<br>
+                    Pour les persoones qui souhaiteraient faire des achats multiples, veuillez cocher la case enregistrer les identifiants pour que vous n'aillez à les rentrer à nouveau.
+                </p>
+            </section>
+            <form id="form-achat-bebe" action="#" method="GET">
+                <label for="name">Votre nom</label>
+                <input type="text" name="nom" id="name">
+
+                <label for="email">Entrez votre adresse mail:</label>
+                <input type="mail" name="mail" id="email">
+                <select >
+                    <!-- <label for="alim">Alimentation</label> -->
+                    <optgroup label="Alimentation">
+                        <option value="Kit d'allaitement">Kit d'allaitement</option>
+                        <option value="Bavoir">Bavoir</option>
+                        <option value="Biberon">Biberon</option>
+                        <option value="Boite doseuse biberon">Boite doseuse biberon</option>
+                        <option value="Coussin de maternité">Coussin de maternité</option>
+                        <option value="Goupillon pour biberon">Goupillon pour biberon</option>
+                        <option value="Sèche biberon">Sèche biberon</option>
+                        <option value="Sucette">Sucette</option>
+                        <option value="Tétine">Tétine</option>                        
+                    </optgroup>
+                    <optgroup label="vétements">
+                        <option value="bodies">Bodies</option>
+                        <option value="bonnet">Bonnet</option>
+                        <option value="chapeau">chapeau</option>
+                        <option value="chaussettes">chaussettes</option>
+                        <option value="chaussons">chaussons</option>
+                        <option value="Kit de naissance">Kit de naissance 5 pièces</option>
+                        <option value="lunettes de soleil">lunettes de soleil</option>
+                        <option value="Moufles-bonnet">moufles et bonnet</option>
+                        <option value="Pyjama">Pyjama</option>
+                    </optgroup>
+                    <optgroup label="toilette">
+                        <option value="Couches">Couches</option>
+                        <option value="Coussinets">Coussinets d'allaitement</option>
+                        <option value="kit de toilette">Kit de toilette</option>
+                        <option value="Matelas à langer">Matelas à langer</option>
+                        <option value="Mouche-bébé">Mouche-bébé</option>
+                        <option value="Table à langer">Table à langer</option>
+                        <option value="Transat de bain">Transat de bain</option>
+                    </optgroup>
+                    <optgroup label="sommeil">
+                        <option value="Lit">Lit pour bébé</option>
+                        <option value="Drap housse">Drap housse</option>
+                        <option value="Gigoteuse">Gigoteuse</option>
+                        <option value="Housse alèse">Housse alèse</option>
+                        <option value="Lit parapluie">Lit parapluie</option>
+                        <option value="Matelas">Matelas</option>
+                        <option value="Mobile de lit">Mobile de lit</option>
+                        <option value="Veilleuse">Veilleuse pour bébé</option>
+                    </optgroup>
+                    <optgroup label="éveil et jouet">
+                        <option value="doudou">doudou</option>
+                        <option value="Jouet">Jouet</option>
+                        <option value="Peluche">Peluche</option>
+                        <option value="Tapis d'éveil">Tapis d'éveil</option>
+                        <option value="Transat éveil">Transat d'éveil</option>                        
+                    </optgroup>
+                    <optgroup label="poussette">
+                        <option value="Chancelière poussette">Chancelière poussette</option>
+                        <option value="Housse de pluie">Housse de pluie</option>
+                        <option value="Ombrelle">Ombrelle pour poussette</option>
+                        <option value="Sac à langer">Sac à langer</option>
+                    </optgroup>
+                    <optgroup label="sécurité">
+                        <option value="babyphone"> paire de babyphones</option>
+                        <option value="Parc">Parc pour bébé</option>
+                    </optgroup>
+                </select>
             </form>
         </main>
         <footer>

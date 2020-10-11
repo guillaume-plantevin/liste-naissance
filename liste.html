@@ -11,7 +11,7 @@
             Cette liste est exhaustive, c’est un tableau qui possède pour chaque élément le nom de l’objet, 
             une image miniature, une catégorie, 
             une description et un lien vers un site qui vend l’article question.
-            Dans cette liste il faut créer 4 classes CSS afin de repérer facilement : 
+            Dans cette liste il faut créer 4 classes CSS afin de repérer facilement: 
             les objets ayant déjà été achetés, ayant été sélectionnés par des amis, urgents et normaux.
             En bas de la liste il doit y avoir un lien qui mène vers un formulaire 
             simulant l’ajout d’objets à la liste. 
@@ -19,6 +19,7 @@
             Les deux pages doivent utiliser le même css.
         
             RAJOUTER UN BOUTON DE RENVOI VERS LE HAUT DE LA PAGE
+            ET Pourquoi pas un bouton pour renvoyer vers chaque catégorie d'article
         -->
     </head>
     <body>
@@ -27,10 +28,27 @@
 
         </header>
         <nav>
+            <ul>Aller directement à la section:
+                <li><a href="#alim-row">Alimentation</a></li>
+                <li><a href="#vetement-row">Vétement</a></li>
+                <li><a href="#toilet-row">Toilette</a></li>
+                <li><a href="#sommeil-row">Sommeil</a></li>
+                <li><a href="#jouet-row">Éveil et jouets</a></li>
+                <li><a href="#poussette-row">Poussette</a></li>
+                <li><a href="#secu-row">Sécurité</a></li>
+            </ul>
 
         </nav>
         <aside>
-            4 Catégories:
+            <p>
+                <ui>4 Catégories:
+                    <li>Déjà acheté</li>
+                    <li>Réservé</li>
+                    <li>Urgent</li>
+                    <li>Normal</li>
+                </ui>
+
+            </p>
         </aside>
 
         <table style="width:auto;background: palegreen;">
@@ -42,24 +60,24 @@
                 <th class="link">Lien pour achat</th>
             </tr>
             <!-- ALIMENTATION -->
-            <tr>
+            <tr class="alim" id="alim-row">
                 <th class="categories">Alimentation</th>
 
-                <td><img class="photo" src="images/01-allaitement.png" alt="kit d'allaitement" /></td>
+                <td><img class="photo" src="images/01-allaitement.png" alt="kit d'allaitement"/></td>
                 <td class="nom">kit d'allaitement</td>
                 <td class="description">
                     <p>Collectez votre lait maternel, stockez-le et alimentez votre bébé en toute simplicité.</p>
                     
-                    <ul>Pack complet:
-                        <li>20 sachets de conservation recyclables,</li> 
-                        <li> 7 adaptateurs tire-lait,</li>
-                        <li> 2 biberons ergonomiques,</li>
-                        <li> 3 tétines (forme du sein maternel) & 2 goupillons et 1 coffret de stockage.</li>
+                    <ul>Contient:
+                        <li>20 sachets de conservation recyclables,</li>
+                        <li>7 adaptateurs tire-lait,</li>
+                        <li>2 biberons ergonomiques,</li>
+                        <li>3 tétines (forme du sein maternel) & 2 goupillons et 1 coffret de stockage.</li>
                     </ul>
                 </td>
-                <td class="link"><a href="https://www.babymoov.com/fr/starter-kit-twist-a004607.html">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/starter-kit-twist-a004607.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="alim">
                 <th></th>
                 <td><img class="photo" src="images/02-bavoir.png" alt="bavoir"></td>
                 <td class="nom">Bavoir</td>
@@ -68,12 +86,12 @@
                         <li>Matière soft et douce</li>
                         <li>Scratch soft pour attacher le bavoir tout en douceur</li>
                         <li>Design fun et rigolo</li>
-                        <li>Nettoyage facile</li>                
+                        <li>Nettoyage facile</li>             
                     </ul>
                 </td>
-                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-bavoir-soft-bdb.html">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-bavoir-soft-bdb.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="alim">
                 <th></th>
                 <td><img class="photo" src="images/03-biberon.png" alt="biberon"></td>
                 <td class="nom">Biberon</td>
@@ -85,9 +103,9 @@
                         <li>Coloris Rose</li>
                     </ul>
                 </td>
-                <td class="link"><a href="https://www.babymoov.com/fr/biberon.html">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/biberon.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="alim">
                 <th></th>
                 <td><img class="photo" src="images/04-boite-doseuse.jpg" alt="Boite doseuse biberon"></td>
                 <td class="nom">Boite doseuse biberon</td>
@@ -99,9 +117,9 @@
                         <li>Lavage à la main ou lave-vaisselle ou stérilisateur</li>
                     </ul>
                 </td>
-                <td class="link"><a href="https://fr.shop-orchestra.com/fr/marques-a-decouvrir/premaman/boite-doseuse-de-lait-en-poudre-mix%26%2339n%26%2339match---bleu-PREYYI.html?dwvar_PREYYI_orc_color=NoColor&dwvar_PREYYI_orc_size=WEB-0000297#q=Boite+doseuse+biberon&start=2">Lien</a></td>
+                <td class="link"><a href="https://fr.shop-orchestra.com/fr/marques-a-decouvrir/premaman/boite-doseuse-de-lait-en-poudre-mix%26%2339n%26%2339match---bleu-PREYYI.html?dwvar_PREYYI_orc_color=NoColor&dwvar_PREYYI_orc_size=WEB-0000297#q=Boite+doseuse+biberon&start=2" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="alim">
                 <th></th>
                 <td><img class="photo" src="images/05-coussin.png" alt="Coussin de maternité"></td>
                 <td class="nom">Coussin de maternité</td>
@@ -114,9 +132,9 @@
                         <li>Maintien le bébé lorsqu'il ne tient pas encore seul en position assise</li>
                     </ul>
                 </td>
-                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-coussin-maternite-b050502.html">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-coussin-maternite-b050502.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="alim">
                 <th></th>
                 <td><img class="photo" src="images/06-goupillon.png" alt="Goupillon pour biberon"></td>
                 <td class="nom">Goupillon pour biberon</td>
@@ -129,9 +147,9 @@
                         <li>Brosse Spéciale pour Tétine</li>
                     </ul>
                 </td>
-                <td class="link"><a href="https://www.babymoov.com/fr/babymoov-goupillon-biberon-a006007.html">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/babymoov-goupillon-biberon-a006007.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="alim">
                 <th></th>
                 <td><img class="photo" src="images/07-seche-biberon.png" alt="Sèche biberon"></td>
                 <td class="nom">Sèche biberon</td>
@@ -139,26 +157,26 @@
                     <ul>
                         <li>Grande capacité: jusqu'à 6 biberons standards ou cols larges</li>
                         <li>Hygiénique: récupérateur d'eau amovible</li>
-                        <li>Pratique: passe au lave-vaisselle</li>    
+                        <li>Pratique: passe au lave-vaisselle</li>  
                     </ul>
                 </td>
-                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-seche-biberon-b006911.html">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-seche-biberon-b006911.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="alim">
                 <th></th>
                 <td><img class="photo" src="images/08-sucette.png" alt="sucette"></td>
                 <td class="nom">Sucette</td>
                 <td class="description">
                     <p>S'adapte parfaitement au palais de bébé!</p>
                     <ul>
-                        <li>Forme physiologique pour s'adapter à la forme du palais et à la dentition de bébé</li>
-                        <li>Collerette ergonomique avec aérations et surface très douce pour le confort de bébé</li>
+                        <li>Forme physiologique pour s'adapter à la forme du palais et à la dentition</li>
+                        <li>Collerette ergonomique avec aérations et surface très douce</li>
                         <li>3 tailles pour s'adapter à la croissance de bébé</li>
                     </ul>
                 </td>
-                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-sucettes-bebe-0-6-mois-bdb.html">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-sucettes-bebe-0-6-mois-bdb.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="alim">
                 <th></th>
                 <td><img class="photo" src="images/09-tétine.png" alt="tétine"></td>
                 <td class="nom">Tétine</td>
@@ -172,412 +190,544 @@
                         <li>S'utilise avec le biberon Squeeze™ dès la naissance</li>
                     </ul>
                 </td>
-                <td class="link"><a href="https://www.babymoov.com/fr/tetines-active-latchtm-debit-rapide-a004612.html">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/tetines-active-latchtm-debit-rapide-a004612.html" target="_blank">Lien</a></td>
             </tr>
 
             <!-- VETEMENTS -->
-            <tr>
+            <tr class="vetement" id="vetement-row">
                 <th class="categories">Vétements</th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/10-bodies.jpg" alt="lot de bodies"></td>
                 <td class="nom">Bodies bébé</td>
                 <td class="description">
-
+                    <p>Lot de 5 bodies "roi de la forêt" manches longues bébé naissance</p>
+                    <ul>
+                        Comprenant:
+                        <li>1 body uni, 1 body rayé, 1 body tout imprimé et 2 bodies avec un motif placé devant</li>
+                        <li>Manches longues</li>
+                        <li>Entièrement pressionné devant: habillage facile</li>
+                        <li>Entrejambe pressionné: pour un change facilité!</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/lot-de-5-bodies-renard-de-la-foret-manches-longues-bebe-naissance-lot-encre.htm?ProductId=700040488&FiltreCouleur=6391&t=1#&gid=1&pid=1" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="vetement">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/11-bonnet.jpg" alt="deux bonnets"></td>
                 <td class="nom">Bonnet bébé</td>
                 <td class="description">
-
+                    <p>Tout doux, tout beau, tout bio: le bonnet bébé spécial maternité 
+                        est proposé par lot de 2 pour encore plus de douceur<br>
+                        Vendu par lot de 2 à motifs imprimés
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/lot-de-2-bonnets-bebe-special-maternite-en-coton-bio-lot-blanc.htm?ProductId=700020245&FiltreCouleur=6341&FiltreTaille=NAISSANCE%2F1M%20-%2050%2F54CM&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="vetement">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/12-chapeau.jpg" alt="un chapeau de soleil"></td>
                 <td class="nom">chapeau</td>
                 <td class="description">
-
+                    <p>Chapeau de soleil réversible Splash & Fun LASSIG<br>
+                        <ul>Les plus de ce chapeau de soleil: 
+                            <li>il est réversible et se porte ainsi des deux côtés.</li>
+                            <li>Un côté avec des motifs colorés, et l’autre unie.</li>
+                            <li>Le chapeau de LÄSSIG a une protection UV 80, parfait pour l’été.</li>
+                            <li>Le chapeau peut être noué au niveau du menton.</li>
+                            <li>Composé de microfibres à séchage rapide.</li>
+                        </ul>
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/chapeau-de-soleil-reversible-splash-fun-lassig-phoque.htm?ProductId=707000811&FiltreCouleur=6626&FiltreTaille=9%2F12M%20-%2071%2F74CM&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="vetement">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/13-chaussettes.jpg" alt="des paires de chaussettes"></td>
                 <td class="nom">Paires de chaussettes bébé</td>
                 <td class="description">
-
+                    <p></p>
+                    <ul>Lot de 3 paires de chaussettes bébé antidérapantes
+                        <li>Lot de 3 paires de chaussettes bébé antidérapantes</li>
+                        <li>Coloris assortis</li>
+                        <li>Dessous de pieds avec pastilles gomme antidérapante</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/lot-de-3-paires-de-chaussettes-bebe-antiderapantes-rose-saumon-clair-imprime.htm?ProductId=700410190&FiltreCouleur=6626&FiltreTaille=15%2F18&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="vetement">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Paire de chausson bébé</td>
+                <td><img class="photo" src="images/14-chaussons.jpg" alt="une paire de chaussons"></td>
+                <td class="nom">Paire de chaussons bébé</td>
                 <td class="description">
-
+                    <ul>
+                        <li>Une fantaisie douce et confortable avec une vraie semelle</li>
+                        <li>Textile aspect fourrure doux et léger pour assurer le confort</li>
+                        <li>de maintien sur le dessus</li>
+                        <li>Enfilage facile et rapide</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/chaussons-esprit-peluche-fille-panda-blanc.htm?ProductId=701001218&FiltreCouleur=6349&FiltreTaille=30%2F31&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="vetement">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Ensemble jour</td>
+                <td><img class="photo" src="images/15-kit-naissance.jpg" alt="kit de naissance, ensemble jour"></td>
+                <td class="nom">Kit de naissance 5 pièces et sac rayé chat - lot encre</td>
                 <td class="description">
-
+                    <p>Un kit pratique pour les tout premiers jours à la maternité:<br>
+                        le kit comprend l'essentiel pour le confort de bébé!<br>
+                        Body, pyjama, doudou, bonnet et moufles envelopperons bébé de douceur et <br>
+                        se réunissent dans un sac au motif graphique!
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/kit-naissance-5-pieces-et-sac-raye-chat-lot-encre.htm?ProductId=702040952&FiltreCouleur=6391&FiltreTaille=1M%20-%2054CM&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="vetement">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/16-lunettes-soleil.jpg" alt="paire de lunettes de soleil avec accessoires"></td>
                 <td class="nom">Paire de lunettes de soleil bébé</td>
                 <td class="description">
-
+                    <p>Lunettes Diabola 0-1 an Ki ET LA<br>
+                        Les lunettes de soleil bébé Diabola 2.0 sont idéales pour les nouveaux nés:<br>
+                        incassables, souples, ultra-légères elles sont aussi réversibles et s’adaptent au développement de l’arête nasale des bébés.
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/lunettes-diabola-0-1-an-ki-et-la-pamplemousse.htm?ProductId=707000737&FiltreCouleur=6589&FiltreTaille=TU&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="vetement">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Paire de moufles bébé</td>
+                <td><img class="photo" src="images/17-moufles-bonnet.jpg" alt="Ensemble de moufles et bonnet"></td>
+                <td class="nom">Ensemble moufles et bonnet</td>
                 <td class="description">
-
+                    <p>Un ensemble bonnet, tour de cou et moufles de bébé craquant animé de chouettes vraiment irrésistibles.<br>
+                        Ces accessoires tout doux sont parfait pour protéger votre petite princesse tout l'hiver.
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/ensemble-3-pieces-chouette-bebe-fille-bonnet-moufles-et-tour-de-cou-rose-the.htm?ProductId=700020348&FiltreCouleur=6650&FiltreTaille=3%2F6M%20-%2060%2F67CM&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="vetement">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/18-pyjama.jpg" alt="lot de deux pyjamas"></td>
                 <td class="nom">Pyjama bébé</td>
                 <td class="description">
-
+                    <p>Un lot de 2 pyjamas en velours douillets avec de beaux imprimés et pour l'un d'entre eux,<br>
+                        une inscription fluorescente qui s'éclaire la nuit tombée...
+                    </p>
+                    <ul>
+                        <li>Lot de 2 pyjamas</li>
+                        <li>Ouverture pressionnée dos</li>
+                        <li>1 pyjama motifs all over + 1 pyjama à inscription fluorescente</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Vestes</td>
-                <td class="description">
-
-                </td>
-                <td class="link"><a href="">Lien</a></td>
-            </tr>
+                <td class="link"><a href="https://www.vertbaudet.fr/lot-de-2-pyjamas-bebe-en-velours-lot-vert-grise.htm?ProductId=700130780&FiltreCouleur=6711&FiltreTaille=18M%20-%2081CM&tool=recherche_partenaire" target="_blank">Lien</a></td>
+            </tr class="vetement">
                 
             <!-- TOILETTE -->
-            <tr>
+            <tr class="toilet" id="toilet-row">
                 <th class="categories">toilette</th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/19-baignoire.png" alt="Une baignoire pour bébé"></td>
                 <td class="nom">Baignoire bébé</td>
                 <td class="description">
-
+                    <p>Une baignoire spacieuse et ludique!</p>
+                    <ul>
+                        <li>Evolutive: adaptée pour les nourrissons et les bébés jusqu'à 12 mois</li>
+                        <li>Spacieuse: peut contenir un hamac de bain</li>
+                        <li>Pratique: bouchon de vidange soft</li>
+                        <li>Tuyau de vidange (vendu séparément)</li>
+                        <li>Pied de baignoire pour encore plus de confort pour les parents (vendu séparément)</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-baignorie-ergo-ludique-bdb.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="toilet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Brosse à cheveux</td>
+                <td><img class="photo" src="images/20-couches.jpg" alt="un pack de couches"></td>
+                <td class="nom">Couches taille 1, pack familial - 140 couches</td>
                 <td class="description">
-
+                    <ul>
+                        <li>Les couches Pampers Harmonie sont testées dermatologiquement et sont hypoallergéniques</li>
+                        <li>Jusqu’à 12 heures bien au sec</li>
+                        <li>Arborent des imprimés adorables et sont dotées d’un indicateur d’urine Pampers très pratique</li>
+                        <li>Conçues sans parfum, latex de caoutchouc naturel, blanchiment au chlore et sans les 26 allergènes listés par l’U.E.</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.amazon.fr/Pampers-Harmonie-Couches-Familial-couches/dp/B07FDQRLVS/ref=sr_1_6?dchild=1&keywords=couches&qid=1602336091&sr=8-6" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="toilet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Paire de ciseaux bébé</td>
+                <td><img class="photo" src="images/21-coussinet-allaitement.jpg" alt="Coussinets d'allaitement"></td>
+                <td class="nom">Coussinets d'allaitement - pack de 100</td>
                 <td class="description">
-                    
+                    <p>Ergonomiques, discrets et hygiéniques, ils laissent la peau respirer et grâce à leur texture alvéolée toute douce, 
+                        vous apportent un confort et une protection optimale au quotidien durant toute la période d'allaitement
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/lot-de-100-coussinets-d-allaitement-jetables-philips-avent-blanc.htm?ProductId=703230152&FiltreCouleur=6369&FiltreTaille=TU&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="toilet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Couches taille 1</td>
-                <td class="description">
-                    
-                </td>
-                <td class="link"><a href="">Lien</a></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Coussinets d'allaitement</td>
-                <td class="description">
-                    
-                </td>
-                <td class="link"><a href="">Lien</a></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/22-kit toilette.png" alt="kit de toilette"></td>
                 <td class="nom">Kit de toilette</td>
                 <td class="description">
-                    
+                    <p>La trousse de soin incontournable pour tous vos déplacements avec bébé!</p>
+                    <ul>
+                        <li>Idéale pour vos déplacements avec bébé</li>
+                        <li>Contient 6 accessoires soin pour bébé</li>
+                        <li>Pratique, la grande poche se déplie</li>
+                        <li>Plusieurs compartiments élastiqués à l'intérieur</li>
+                        <li>Transport facile grâce à sa grande anse</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/trousse-de-soin-compacte-a032003.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="toilet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/23-matelas-langer.png" alt="Un Matelas à langer"></td>
                 <td class="nom">Matelas à langer</td>
                 <td class="description">
-                    
+                    <p>Le matelas à langer tout doux et sûr pour changer facilement votre bébé!</p>
+                    <ul>
+                        <li>Coussin amovible bi-matière: 1 face imperméable et 1 face ultra douce en coton déperlant</li>
+                        <li>Matelas épais et waterproof</li>
+                        <li>Ceinture de maitien intégrée</li>
+                        <li>Coussin lavable en machine à 30°</li>
+                        <li>Dos antidérapant</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/cosy-care-matelas-a-langer-a024002.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="toilet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Mouche à bébé</td>
+                <td><img class="photo" src="images/24-mouche-bebe.png" alt="un mouche-bébé"></td>
+                <td class="nom">Mouche-bébé</td>
                 <td class="description">
-                    
+                    <p>Le mouche-bébé tout doux pour déboucher le nez de votre bébé!</p>
+                        <ul>
+                            <li>Produit breveté: effet barrière contre le mucus, Fabriqué en Europe</li>
+                            <li>Indispensable pour nettoyer le nez de votre enfant, par inspiration bucale</li>
+                            <li>Embout nasal morphologique souple adapté aux plus petites narines</li>
+                            <li>Filtre assainisseur intégré</li>
+                            <li>Facile à nettoyer et convient aux stérilisateurs vapeur</li>
+                        </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/babymoov-mouche-bebe-a032201.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="toilet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/25-table-langer.png" alt="une table à langer"></td>
                 <td class="nom">Table à langer</td>
                 <td class="description">
-                    
+                    <p>La table à langer murale pratique et compacte.</p>
+                    <ul>
+                        <li>Seulement 13 cm d'épaisseur</li>
+                        <li>Légère, moins de 10kg</li>
+                        <li>Tout le matériel nécessaire pour le change à portée de main</li>
+                        <li>Matelas à langer confortable et lavable</li>
+                        <li>Sécurisée: grâce à ses deux charnières et son piston</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-table-langer-plouf-b035201.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="toilet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Thermomètre à bébé</td>
-                <td class="description">
-                    
-                </td>
-                <td class="link"><a href="">Lien</a></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Thermomètre de bain</td>
-                <td class="description">
-                    
-                </td>
-                <td class="link"><a href="">Lien</a></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/26-transat.png" alt="un transat de bain"></td>
                 <td class="nom">Transat de bain</td>
                 <td class="description">
-                    
+                    <p>Le transat morphologique pour le nouveau-né!</p>
+                    <ul>
+                        <li>Idéal pour le bain des nouveaux nés</li>
+                        <li>S'adapte à toutes les baignoires</li>
+                        <li>100% stable grâce à sa ventouse</li>
+                        <li>100% confortable grâce à son matelas soft</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/transat-baignoire-aquasoft-a016002.html" target="_blank">Lien</a></td>
             </tr>
 
             <!-- SOMMEIL -->
-            <tr>
+            <tr class="sommeil" id="sommeil-row">
                 <th class="categories">Sommeil</th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/27-lit.jpg" alt="Un lit pour bébé"></td>
                 <td class="nom">Lit pour bébé</td>
                 <td class="description">
-                    
+                    <p>Un petit lit à barreaux aux formes classiques, parfait pour accueillir bébé 
+                        dès les premières nuits. (Livré avec sommier)
+                    </p>
+                    <ul>
+                        DIMENSIONS:
+                        <li>Largeur 64,5 cm x longueur 124 cm. Tête et pied de lit: hauteur 84 cm.</li>
+                        <li>Couchage de 60 x 120 cm (matelas vendu séparément sur ce site)</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/lit-bebe-a-barreaux-poupon-blanc.htm?ProductId=705000129&FiltreCouleur=6369&FiltreTaille=TU&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="sommeil">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Commode pour bébé</td>
-                <td class="description">
-                    
-                </td>
-                <td class="link"><a href="">Lien</a></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
-                <td class="nom">Armoire pour bébé</td>
-                <td class="description">
-                    
-                </td>
-                <td class="link"><a href="">Lien</a></td>
-            </tr>
-            <tr>
-                <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/28-draps-housse.jpg" alt="Un drap housse pour bébé"></td>
                 <td class="nom">Drap housse pour bébé</td>
                 <td class="description">
-                    
+                    <p>Bien extensibles, ces draps-housses s'adaptent parfaitement au matelas du lit de bébé.<br>
+                        Drap-housse bébé disponible en 2 tailles au choix:
+                    </p>
+                    <ul>
+                        DIMENSIONS:
+                        <li>60 x 120 cm</li>
+                        <li>70 x 140 cm</li>
+                    </ul>
+                    <ul>
+                        <li>Drap-housse bébés vendu en lot de 2<br>
+                            (1 blanc imprimé étoiles couleur+ 1 couleur imprimé étoiles blanches)</li>
+                        <li>Coins élastiqués</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/lot-de-2-draps-housses-bebe-en-jersey-extensible-imprime-etoiles-gris-chine-blanc.htm?ProductId=704020356&FiltreCouleur=6426&FiltreTaille=60x120&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="sommeil">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/29-gigoteuse.jpg" alt="Une gigoteuse"></td>
                 <td class="nom">Gigoteuse</td>
                 <td class="description">
-                    
+                    <p>
+                        Réalisée dans une matière écologique et plus saine, idéale pour le sommeil des plus petits, la gigoteuse les réchauffe en toute sécurité!<br>
+                        Pratique, ses manches sont amovibles pour l'utiliser en mi-saison.
+                    </p>
+                    <ul>DIMENSIONS:
+                        <li>0/6 mois (70 cm)</li>
+                        <li>6/18 mois (85 cm)</li>
+                        <li>18/36 mois (105 cm)</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/gigoteuse-matelassee-bio-collection-bio-nuage-a-manches-amovibles-blanc.htm?ProductId=702290444&FiltreCouleur=6349&FiltreTaille=0%2F6%20M&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="sommeil">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/30-alese.jpg" alt="Une housse alèse"></td>
                 <td class="nom">Housse alèse</td>
                 <td class="description">
-                    
+                    <p>Face aux petits incidents, l'alèse est recommandée pour éviter les auréoles de condensation ou d'humidité sur le matelas!</p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/alese-molleton-impermeable-bio-collection-blanc.htm?ProductId=703173047&FiltreCouleur=0019&FiltreTaille=90X190&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="sommeil">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/31-lit-parapluie.jpg" alt="Un lit parapluie"></td>
                 <td class="nom">Lit parapluie</td>
                 <td class="description">
-                    
+                    <p>Un lit d'appoint ou de voyage léger et très pratique pour accueillir votre enfant.</p>
+                    <ul>
+                        <li>2 côtés en toile imprimée.</li>
+                        <li>2 côtés en maille filet pour garder le contact visuel.</li>
+                        <li>Dimensions ouvert: 120 x 60 x 74 cm</li>
+                        <li>Totalement pliable, se glisse facilement dans le sac de transport inclus.</li>
+                        <li>Livré avec matelas pliant (couchage: 60 x 120 cm).</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/lit-parapluie-vertbaudet-travel-bed-marine-lapin.htm?ProductId=703283033&FiltreCouleur=6400&FiltreTaille=TU&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="sommeil">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/32-matelas.jpg" alt="Un matelas pour bébé"></td>
                 <td class="nom">Matelas bébé</td>
                 <td class="description">
-                    
+                    <p>
+                        La solution efficace pour une protection permanente et une hygiène optimale du couchage<br>
+                    </p>
+                    <ul>
+                        <li>DIMENSIONS: 60x120 cm</li>
+                        <li>Ame en mousse (densité 25 kg/m3), épaisseur 12 cm</li>
+                        <li>Housse coutil en 76% polyester, 24% polypropylène traitée anti-acariens Bi-home®</li>
+                        <li>Face été en ouate de polyester (200 g/m2)</li>
+                        <li>Face hiver en laine (150 g/m2) + ouate de polyester (200 g/m2)</li>
+                        <li>Epaisseur totale: 14 cm</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/matelas-bebe-anti-acariens-traite-bi-ome-blanc.htm?ProductId=703070005&FiltreCouleur=6349&FiltreTaille=60x120&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="sommeil">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/33-mobile-lit.jpg" alt="Un mobile de lit"></td>
                 <td class="nom">Mobile de lit</td>
                 <td class="description">
-                    
+                    <p>Un joli mobile musical pour apaiser bébé dans son berceau ou son lit à barreaux.<br>
+                        Livré dans une jolie boîte, ce mobile musical fait une très belle idée cadeau!
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/coffret-mobile-musical-jungle-en-fete-vert.htm?ProductId=618410081&FiltreCouleur=6729&FiltreTaille=TU&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="sommeil">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/34-veilleuse-1.jpg" alt="une veilleuse de bébé"></td>
                 <td class="nom">Veilleuse bébé</td>
                 <td class="description">
-                    
+                    <p>Une veilleuse avec un mignon petit chat assoupi qui veillera avec douceur sur les rêves de bébé...</p>
+                    <ul>
+                        <li>Détails en relief et peints à la main</li>
+                        <li>Interrupteur sur câble et transformateur</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.vertbaudet.fr/veilleuse-portative-tactile-bleu.htm?ProductId=705011520&FiltreCouleur=6389&FiltreTaille=TU&tool=recherche_partenaire" target="_blank">Lien</a></td>
             </tr>
 
             <!-- EVEIL ET JOUET -->
-            <tr>
+            <tr class="jouet" id="jouet-row">
                 <th class="categories">Éveil et jouet</th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/35-doudou.jpg" alt="un doudou renard"></td>
                 <td class="nom">doudou</td>
                 <td class="description">
-                    
+                    <p>Le doudou plat velours renard Mr. Fox de la marque Trixie rassure et 
+                        apaise bébé lors du coucher ou lorsqu'il a un chagrin. 
+                        Vous pouvez utiliser l'attache nouée pour accrocher la sucette afin d'éviter de la perdre.
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.berceaumagique.com/produit_trixie-doudou-plat-velours-renard-mr-fox_159848.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="jouet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/36-jouet.jpg" alt="un jouet d'activités"></td>
                 <td class="nom">Jouet</td>
                 <td class="description">
-                    
+                    <p> Le jouet d'activités à suspendre éléphant miroir de la marque Infantino 
+                        est facile à suspendre au lit ou bien au parc de bébé. 
+                        Il est idéal pour voyager et se déplacer avec bébé. 
+                        Il se fixe très facilement aux repose-têtes de tous les sièges voiture 
+                        grâce à son attache et ses anneaux. 
+                        L'éléphant miroir apportera beaucoup de plaisir à votre enfant 
+                        grâce à ses couleurs vibrantes et ses textures.
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.berceaumagique.com/produit_infantino-jouet-d-activites-a-suspendre-elephant-miroir_161683.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="jouet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/37-peluche.jpg" alt="Une peluche chat"></td>
                 <td class="nom">Peluche</td>
                 <td class="description">
-                    
+                    <p>La peluche chat Lulu Les Moustaches de la marque Moulin Roty 
+                        amusera votre enfant et lui apportera du réconfort quand il en a besoin.
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.berceaumagique.com/produit_moulin-roty-peluche-chat-lulu-les-moustaches-27-cm_148014.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="jouet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/38-tapis-d-eveil.jpg" alt="Tapis d'éveil"></td>
                 <td class="nom">Tapis d'éveil</td>
                 <td class="description">
-                    
+                    <p>Le tapis d'éveil musical avec arches vert Céladon de la marque Trousselier 
+                        est parfait pour stimuler bébé et développer ses capacités cognitives. 
+                    </p>
+                    <ul>Caractéristiques techniques:
+                        <li>Boîtier musical amovible</li>
+                        <li>Arches amovibles</li>
+                        <li>Livré dans un étui de rangement</li>
+                    </ul>                    
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.berceaumagique.com/produit_trousselier-tapis-d-eveil-musical-avec-arches-vert-celadon-90-cm_155082.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="jouet">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/39-transat.png" alt="Transat bébé"></td>
                 <td class="nom">Transat bébé</td>
                 <td class="description">
-                    
+                    <p>Le transat déco ultra confort pour bébé!</p>
+                    <ul>
+                        <li>Transat fixe ou balancelle</li>
+                        <li>Coussin de tête réglable et amovible</li>
+                        <li>Arche de jeux  amovible, avec ses 2 jouets</li>
+                        <li>Pliage compact ultra plat</li>
+                        <li>Hyper compact</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/badabulle-transat-easy-b012012.html" target="_blank">Lien</a></td>
             </tr>
 
             <!-- POUSSETTE -->
-            <tr>
+            <tr class="poussette" id="poussette-row">
                 <th class="categories">Poussette</th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/40-chanceliere.jpg" alt="Chancelière poussette"></td>
                 <td class="nom">Chancelière poussette</td>
                 <td class="description">
-                    
+                    <p> La chancelière poussette universelle Dreamer 
+                        beige de la marque Walking Mum permet de promener bébé en le gardant bien au chaud, 
+                        à l'abri du vent et du froid. Elle est confortable et s'adapte à toutes les poussettes.
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.berceaumagique.com/produit_walking-mum-chanceliere-poussette-universelle-dreamer-beige-88-cm_160283.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="poussette">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/41-pluie-poussette.jpg" alt="Housse de pluie pour poussette"></td>
                 <td class="nom">Housse de pluie poussette</td>
                 <td class="description">
+                    <p>L'habillage de pluie Deluxe pour poussette Chicco est universel et s'adapte donc à la plupart des modèles.</p>
+
+                    <p>Accessoire indispensable, il permet de protéger votre enfant des aléas de la météo par mauvais temps: pluie, neige ou vent.</p>
                     
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.autourdebebe.com/p/chiccohabillagepluiedeluxeuniverselpoussettesnocolor/habillage-pluie-universel-deluxe-chicco" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="poussette">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/42-ombrelle.jpg" alt="Ombrelle poussette"></td>
                 <td class="nom">Ombrelle poussette</td>
                 <td class="description">
-                    
+                    <ul>
+                        <li>Ombrelle orientable pour protèger Bébé du soleil.</li>
+                        <li>S'accroche sur toutes les poussettes Bébé Confort</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.autourdebebe.com/p/8712930155980/ombrelle-ronde-bebe-confort" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="poussette">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/43-sac-langer.jpg" alt="un sac à langer"></td>
                 <td class="nom">Sac à langer</td>
                 <td class="description">
-                    
+                    <p> Le sac à langer Deluxe vous aide à vous organiser lors de vos balades et voyages.<br>
+                        Grâce à sa grande capacité de rangement, vous pouvez emporter tout le nécessaire pour prendre soin de bébé, 
+                        partout où vous voulez.<br>
+                        Un tapis à langer est inclus pour vous permettre de changer bébé lors de vos déplacements.
+                    </p>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.autourdebebe.com/p/3583678105477/sac-a-langer-deluxe-maika" target="_blank">Lien</a></td>
             </tr>
-
+            
             <!-- SECURITE -->
-            <tr>
+            <tr class="secu" id="secu-row">
                 <th class="categories">Sécurité</th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/44-babyphone.png" alt="une paire de babyphone"></td>
                 <td class="nom">Babyphone</td>
                 <td class="description">
-                    
+                    <p>Le babyphone compact longue portée.</p>
+                    <ul>
+                        <li>Basse puissance d'émission d'ondes et longue portée</li>
+                        <li>Son clair, sans interférence avec une fonction veilleuse</li>
+                        <li>Activation à la voix (mode VOX)</li>
+                        <li>3 alarmes: sonore, visuelle ou vibreur et un volume réglable</li>
+                        <li>Portée de 1000m en champs libre</li>
+                    </ul>
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.babymoov.com/fr/babyphone-expert-care-a014303.html" target="_blank">Lien</a></td>
             </tr>
-            <tr>
+            <tr class="secu">
                 <th></th>
-                <td><img class="photo" src="images/" alt=""></td>
+                <td><img class="photo" src="images/45-parc.jpg" alt="Parc pour bébé"></td>
                 <td class="nom">Parc bébé</td>
                 <td class="description">
+                    <p> Le parc bébé Octo-Parc est à la fois esthétique, mais aussi mobile par ses 8 roulettes.<br> 
+                        Pratique, il peut donc se déplacer facilement d’une pièce à une autre et les freins garantissent l'arrêt.<br>
+                        Conçu pour pouvoir évoluer avec l’enfant, il est réglable sur 3 hauteurs, pour mieux s’adapter à l’âge de l’enfant.
+                    </p>
+                    <p> Son fond matelassé, rembourré en mousse garantit 
+                        le confort de bébé et le motif étoiles apporte une touche d’originalité et de douceur à cet espace de jeux douillet.
+                    </p>
                     
                 </td>
-                <td class="link"><a href="">Lien</a></td>
+                <td class="link"><a href="https://www.autourdebebe.com/p/4010221082460/parc-bois-octogonal-geuther" target="_blank">Lien</a></td>
             </tr>
                 
         </table>
 
         <footer>
-            <a href="formulaire.html">Formulaire</a>
+            <a href="formulaire.html" target="_blank">Formulaire</a>
             <!-- BOUTON DE RENVOI -->
             <span>
                 <a href="#up"><img src="images/arrow-up.png" alt="flêche vers le haut" width="80px"/>Retour vers le haut</a>
