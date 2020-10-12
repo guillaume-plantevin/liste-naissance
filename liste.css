@@ -24,42 +24,27 @@ nav li {
     display: inline;
     text-decoration: none;
     margin-left: 20px;
-    /*border: 2px solid black;*/
-    /*border-collapse: collapse;*/
-
 }
 nav a {
     padding: 5px;
     text-decoration: none;
-    /*background: yellow;*/
     border: 2px solid black;
     border-collapse: collapse;
 }
 nav ul {
-    /*background: yellow;*/
-    /*margin: 15px 30px;*/
+
     padding: 15px 10px;
     font-size: 20px;
-    /* border: 1px solid black; */
     box-shadow: 0 0 5px 5px lightblue;
     background-color: lightblue;
 }
-/* .go-up {
 
-} */
-/* 
-.categories {
-    margin: 0 10px;
-} */
 /* ====================ASIDE=================== */
 aside table {
-    /* border: none; */
-
     width:300px;
     margin:20px 15px;
 }
 aside td {
-    /* border: none; */
     padding: 10px;
 }
 aside p {
@@ -90,8 +75,7 @@ table, th, td {
     border: 2px solid black;
 }
 table {
-    /*width:auto;*/
-    /*background: palegreen;*/
+
     border-collapse: collapse;
     margin: 0 15px;
 }
@@ -108,12 +92,9 @@ table {
 .urgent{
     border-left: 10px solid red;
     border-right: 10px solid red;
-    /* background: rgba(255, 0, 0, 0.541); */
     animation: changingbackground 2s infinite 
 }
-/* .urgent tr{
-    background-color: red;
-} */
+
 .reserved {
     text-decoration: line-through;
     border-left: 10px solid rgb(255, 251, 0);
@@ -137,17 +118,14 @@ table {
 /* ====================FOOTER==================== */
 
 footer {
-    /* border: 1px solid black; */
     box-shadow: 0 0 5px 5px rgb(173, 216, 230);
     padding: 0;
     display: flex;
     justify-content: space-around;
     height: 60px;
-    /* background: pink; */
 }
 footer .form {
     border: 2px solid black;
-    /* margin: 20px auto; */
     padding: 5px 10px;
     height: 48px;
     text-align: center;
@@ -172,4 +150,34 @@ a:hover {
     50%{background: rgba(175, 238, 238, 0.479);}
     100%{background: rgba(255, 0, 0, 0.541);}
 
-  }
+}
+/* =================FORM=============== */
+.main-form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* ================HEADER-FORM======== */
+.header-form h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text
+}
+/* ===============INTRO FORM=========== */
+.intro-form {
+    /* border: 2px solid black; */
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+fieldset {
+    width: 60%;
+    margin: 50px auto;
+}
+
+/* .fieldset-form {
+    display: flex;
+    flex-direction: column
+    align-items: center;
+    justify-content: center;
+} */
