@@ -1,4 +1,4 @@
- 
+ /*
     les objets ayant déjà été achetés, 
     ayant été sélectionnés par des amis, urgents et normaux.
     En bas de la liste il doit y avoir un lien qui mène vers un formulaire 
@@ -8,6 +8,9 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    line-height: 1.4;
+    background: rgba(175, 238, 238, 0.479);
+
 }
 header h1{
     font-family: 'Arial black';
@@ -20,6 +23,7 @@ header h1{
 nav li {
     display: inline;
     text-decoration: none;
+    margin-left: 20px;
     /*border: 2px solid black;*/
     /*border-collapse: collapse;*/
 
@@ -31,16 +35,13 @@ nav a {
     border: 2px solid black;
     border-collapse: collapse;
 }
-/*  CO*/
-nav a:hover {
-    scale: 1.2;
-    background: pink;
-}
 nav ul {
     /*background: yellow;*/
+    /*margin: 15px 30px;*/
     padding: 15px 10px;
     font-size: 20px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 5px 5px lightblue;
     background-color: lightblue;
 }
 /* .go-up {
@@ -50,13 +51,35 @@ nav ul {
 .categories {
     margin: 0 10px;
 } */
+/* ====================ASIDE=================== */
+aside table {
+    /* border: none; */
+
+    width:300px;
+    margin:20px 15px;
+}
+aside td {
+    /* border: none; */
+    padding: 10px;
+}
+aside p {
+    font-weight: 900;
+    margin: 15px;
+}
 /* ===================TABLE==================== */
+.categories {
+    text-transform: uppercase;
+}
+#list {
+    width:auto;
+    background: rgba(175, 238, 238, 0.178);
+}
 .photo {
     width: 180px;
     padding: 0;
     margin: 0;
 }
-p {
+.description {
     margin-left: 2%;
 }
 th {
@@ -67,6 +90,8 @@ table, th, td {
     border: 2px solid black;
 }
 table {
+    /*width:auto;*/
+    /*background: palegreen;*/
     border-collapse: collapse;
     margin: 0 15px;
 }
@@ -80,16 +105,71 @@ table {
     background-color: darkorange;
 }
 /* ==================CATEGORIES=================== */
-/* .bought {
+.urgent{
+    border-left: 10px solid red;
+    border-right: 10px solid red;
+    /* background: rgba(255, 0, 0, 0.541); */
+    animation: changingbackground 2s infinite 
+}
+/* .urgent tr{
+    background-color: red;
+} */
+.reserved {
+    text-decoration: line-through;
+    border-left: 10px solid rgb(255, 251, 0);
+    border-right: 10px solid rgb(255, 251, 0);
+    background: rgba(255, 251, 0, 0.664);
 
 }
-.selected {
+.bought {
+    text-decoration: line-through;
+    border-left: 10px solid rgb(247, 0, 255);
+    border-right: 10px solid rgb(247, 0, 255);
+    background: rgba(247, 0, 255, 0.336);
 
 }
-.urgent {
+.normal { 
+    border-left: 10px solid rgb(12, 201, 75);
+    border-right: 10px solid rgb(12, 201, 75);
+    background: rgba(12, 201, 75, 0.404);
 
 }
-.normal { */
+/* ====================FOOTER==================== */
 
+footer {
+    /* border: 1px solid black; */
+    box-shadow: 0 0 5px 5px rgb(173, 216, 230);
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    /* background: pink; */
 }
-/* ====================FOOTER==================== 
+footer .form {
+    border: 2px solid black;
+    /* margin: 20px auto; */
+    padding: 5px 10px;
+    height: 48px;
+    text-align: center;
+}
+footer img {
+    width: 60px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+}
+a:hover {
+    background: rgba(128, 128, 128, 0.397);
+}
+/* ==============ANIMATION============= */
+@keyframes changingbackground {
+    0%{background: rgba(255, 0, 0, 0.541);}
+    50%{background: rgba(175, 238, 238, 0.479);}
+    100%{background: rgba(255, 0, 0, 0.541);}
+
+  }
